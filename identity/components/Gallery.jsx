@@ -2,6 +2,15 @@
 import React, { useState } from 'react';
 import '../styles/gallery.css';
 import image1 from '../images/Screenshot 2025-03-09 122822.png'
+import image2 from '../images/Screenshot 2025-03-09 162001.png'
+import image3 from '../images/Screenshot 2025-03-09 162008.png'
+import image8 from '../images/Screenshot 2025-03-09 163712.png'
+import image5 from '../images/Screenshot 2025-03-09 163828.png'
+import image6 from '../images/Screenshot 2025-03-09 163351.png'
+import image4 from '../images/Screenshot 2025-03-09 163409.png'
+import image7 from '../images/Screenshot 2025-03-09 162008.png'
+
+
 
 function Gallery() {
   const [filter, setFilter] = useState('all');
@@ -9,17 +18,13 @@ function Gallery() {
   // Sample artwork data
   const artworks = [
     { id: 1, title: "Colorful Dreams", artist: "Maria Santos", medium: "Painting", category: "visual", image: image1 },
-    { id: 2, title: "Sound of Silence", artist: "John Chen", medium: "Digital Art", category: "digital" },
-    { id: 3, title: "Texture of Life", artist: "Aisha Johnson", medium: "Sculpture", category: "sculpture" },
-    { id: 4, title: "Ocean Whispers", artist: "David Kim", medium: "Painting", category: "visual" },
-    { id: 5, title: "Urban Rhythms", artist: "Sofia Rodriguez", medium: "Photography", category: "photography" },
-    { id: 6, title: "Digital Landscapes", artist: "Marcus Lee", medium: "Digital Art", category: "digital" },
-    { id: 7, title: "Tactile Emotions", artist: "Emma Wilson", medium: "Sculpture", category: "sculpture" },
-    { id: 8, title: "City Lights", artist: "James Taylor", medium: "Photography", category: "photography" },
-    { id: 9, title: "Abstract Thoughts", artist: "Olivia Brown", medium: "Painting", category: "visual" },
-    { id: 10, title: "Virtual Reality", artist: "Raj Patel", medium: "Digital Art", category: "digital" },
-    { id: 11, title: "Nature's Touch", artist: "Sarah Johnson", medium: "Sculpture", category: "sculpture" },
-    { id: 12, title: "Street Stories", artist: "Miguel Sanchez", medium: "Photography", category: "photography" },
+    { id: 2, title: "Sound of Silence", artist: "John Chen", medium: "Digital Art", category: "digital",image:image2 },
+    { id: 3, title: "Texture of Life", artist: "Aisha Johnson", medium: "Sculpture", category: "sculpture",image:image3 },
+    { id: 4, title: "Ocean Whispers", artist: "David Kim", medium: "Painting", category: "visual",image:image4 },
+    { id: 5, title: "Urban Rhythms", artist: "Sofia Rodriguez", medium: "Photography", category: "photography",image:image5 },
+    { id: 6, title: "Digital Landscapes", artist: "Marcus Lee", medium: "Digital Art", category: "digital",image:image6 },
+    { id: 7, title: "Tactile Emotions", artist: "Emma Wilson", medium: "Sculpture", category: "sculpture",image:image7 },
+    { id: 8, title: "City Lights", artist: "James Taylor", medium: "Photography", category: "photography",image:image8 },
   ];
   
   const filteredArtworks = filter === 'all' 
