@@ -1,8 +1,8 @@
 /* Footer.css */
 
 .site-footer {
-    background-color: #f8f8f8;
-    color: #444;
+    background-color: rgba(0, 0, 0, 0.732);
+    color: #e0e0e0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
@@ -67,7 +67,7 @@
   
   .footer-links a,
   .footer-programs a {
-    color: #555;
+    color: #e0e0e0;
     text-decoration: none;
     transition: color 0.3s;
   }
