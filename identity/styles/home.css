@@ -33,7 +33,7 @@
   
   .image-placeholder img {
     width: 100%;
-    height: 100%;
+    height: 30rem;
     object-fit: cover; /* Makes the image cover the container while maintaining aspect ratio */
     object-position: center; /* Centers the image */
     transition: transform 0.3s ease; /* Smooth zoom effect on hover */

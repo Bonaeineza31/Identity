@@ -21,7 +21,7 @@ function Home() {
           </div>
           <div className="hero-image">
             <div className="image-placeholder" >
-              <span> <img src={homeimage} /></span>
+              <img src={homeimage}/>
             </div>
           </div>
         </div>
