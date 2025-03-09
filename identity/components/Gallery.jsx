@@ -1,6 +1,6 @@
 // pages/Gallery.jsx
 import React, { useState } from 'react';
-import './Gallery.css';
+import '../styles/gallery.css';
 
 function Gallery() {
   const [filter, setFilter] = useState('all');
