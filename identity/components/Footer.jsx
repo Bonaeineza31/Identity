@@ -9,7 +9,7 @@ function Footer() {
         <div className="container">
           <div className="footer-grid">
             <div className="footer-about">
-              <h3 className="footer-title">ArtAbility</h3>
+              <h3 className="footer-title">Identity</h3>
               <p>
                 Empowering artists with disabilities through accessible programs, 
                 creative resources, and professional opportunities.
@@ -83,7 +83,7 @@ function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <div className="footer-bottom-content">
-            <p>&copy; {new Date().getFullYear()} ArtAbility. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Identity. All rights reserved.</p>
             <div className="footer-legal-links">
               <Link to="/privacy">Privacy Policy</Link>
               <Link to="/terms">Terms of Service</Link>
