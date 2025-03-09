@@ -1,9 +1,40 @@
 // pages/About.jsx
 import React from 'react';
 import '../styles/about.css';
-import kevin from '../images/kevin pics.jpg'
+import kevin from '../images/kevin pics.jpg';
+import michael from '../images/michael.jpg';
+// import sarah from '../images/sarah.jpg';
+// import david from '../images/david.jpg';
 
 function About() {
+  // Team members data
+  const teamMembers = [
+    { 
+      name: "Manzi Kevin", 
+      role: "Executive Director",
+      image: kevin,
+      bio: "Kevin leads our organization with passion and vision."
+    },
+    { 
+      name: "Michael Wong", 
+      role: "Program Director", 
+      // image: michael, // Uncomment when you have the image
+      bio: "Michael is a visual artist and educator specializing in accessible art education."
+    },
+    { 
+      name: "Sarah Johnson", 
+      role: "Adaptive Technology Specialist", 
+      // image: sarah, // Uncomment when you have the image
+      bio: "Sarah develops custom tools that make artistic creation possible for people with various disabilities."
+    },
+    { 
+      name: "David Rodriguez", 
+      role: "Community Outreach", 
+      // image: david, // Uncomment when you have the image
+      bio: "David builds partnerships with organizations to expand our reach and impact."
+    }
+  ];
+
   return (
     <div className="about-page">
       <section className="about-hero">
@@ -71,20 +102,19 @@ function About() {
           <div className="story-content">
             <div className="story-image">
               <div className="image-placeholder">
-                <img src={kevin}/>
-                {/* <span>kevin</span> */}
+                <img src={kevin} alt="Founder" />
               </div>
             </div>
             <div className="story-text">
               <p>
-                Identity began in 2024 when our founder, an young boy without  disability, 
+                Identity began in 2024 when our founder, a young boy without disability, 
                 experienced firsthand the lack of accessible creative spaces and opportunities for people with disability. 
                 What started as a small workshop series has grown into a comprehensive organization 
                 dedicated to transforming the arts and entertainment landscape.
               </p>
               <p>
-                Over the months, we've expanded our programs, visted centers having people with such disability 
-                 and encouraged most of them to start  careers  as talented artists with disabilities. 
+                Over the months, we've expanded our programs, visited centers having people with such disability 
+                and encouraged most of them to start careers as talented artists with disabilities. 
                 Our work has been recognized on district-level for its innovation and impact.
               </p>
               <p>
@@ -100,18 +130,20 @@ function About() {
         <div className="container">
           <h2 className="section-heading text-center">Our Team</h2>
           <div className="team-grid">
-            {/* Team member cards with placeholders for images */}
-            {[
-              { name: "Jane Smith", role: "Executive Director", bio: "Jane has over 15 years of experience in arts administration and disability advocacy." },
-              { name: "Michael Wong", role: "Program Director", bio: "Michael is a visual artist and educator specializing in accessible art education." },
-              { name: "Sarah Johnson", role: "Adaptive Technology Specialist", bio: "Sarah develops custom tools that make artistic creation possible for people with various disabilities." },
-              { name: "David Rodriguez", role: "Community Outreach", bio: "David builds partnerships with organizations to expand our reach and impact." }
-            ].map((member, index) => (
+            {teamMembers.map((member, index) => (
               <div key={index} className="team-card card">
                 <div className="team-image">
-                  <div className="image-placeholder">
-                    <span>Team Member Photo</span>
-                  </div>
+                  {member.image ? (
+                    <img 
+                      src={member.image} 
+                      alt={`${member.name} - ${member.role}`} 
+                      className="team-member-img"
+                    />
+                  ) : (
+                    <div className="image-placeholder">
+                      <span>{member.name.split(' ').map(n => n[0]).join('')}</span>
+                    </div>
+                  )}
                 </div>
                 <div className="team-info">
                   <h3>{member.name}</h3>
@@ -128,7 +160,7 @@ function About() {
         <div className="container">
           <h2 className="section-heading text-center">Our Partners</h2>
           <p className="partners-intro">
-            We collaborate with a diverse network of organizations committed to inclusive arts and accessibility.
+            We shall be collaborating with a diverse network of organizations committed to inclusive arts and accessibility.
           </p>
           <div className="partners-grid">
             {/* Partner logos placeholders */}
