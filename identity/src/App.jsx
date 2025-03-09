@@ -6,8 +6,8 @@ import Footer from '../components/Footer';
 import Home from '../components/Home';
 import About from '../components/About';
 import Gallery from '../components/Gallery';
-// import Contact from './pages/Contact';
-// import Programs from './pages/Programs';
+import Contact from './pages/Contact';
+import Programs from './pages/Programs';
 import './App.css';
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
-            {/*<Route path="/programs" element={<Programs />} />
-            <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/programs" element={<Programs />} />
+            <Route path="/contact" element={<Contact />} /> 
           </Routes>
         </main>
         <Footer />
