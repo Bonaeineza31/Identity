@@ -119,9 +119,12 @@ function Home() {
       <section className="impact-section">
         <div className="container">
           <h2 className="section-heading text-center">Our Impact</h2>
-          <div className="stats-container">
+          <h5>More to come</h5>
+
+
+          {/* <div className="stats-container">
             <div className="stat-item">
-              <div className="stat-number">200+</div>
+              <div className="stat-number">20</div>
               <div className="stat-label">Artists Supported</div>
             </div>
             <div className="stat-item">
@@ -136,7 +139,7 @@ function Home() {
               <div className="stat-number">5000+</div>
               <div className="stat-label">Workshop Attendees</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
