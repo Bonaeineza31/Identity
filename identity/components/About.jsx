@@ -2,7 +2,7 @@
 import React from 'react';
 import '../styles/about.css';
 import kevin from '../images/kevin pics.jpg';
-import michael from '../images/michael.jpg';
+import nikita from '../images/nikita.jpg';
 // import sarah from '../images/sarah.jpg';
 // import david from '../images/david.jpg';
 
@@ -16,23 +16,23 @@ function About() {
       bio: "Kevin leads our organization with passion and vision."
     },
     { 
-      name: "Michael Wong", 
-      role: "Program Director", 
-      // image: michael, // Uncomment when you have the image
-      bio: "Michael is a visual artist and educator specializing in accessible art education."
+      name: "Akimana Nikita", 
+      role: "Communications officer", 
+      image:nikita,
+      bio: "Nikita helps in reaching out to potential partners and people with disability"
     },
-    { 
-      name: "Sarah Johnson", 
-      role: "Adaptive Technology Specialist", 
-      // image: sarah, // Uncomment when you have the image
-      bio: "Sarah develops custom tools that make artistic creation possible for people with various disabilities."
-    },
-    { 
-      name: "David Rodriguez", 
-      role: "Community Outreach", 
-      // image: david, // Uncomment when you have the image
-      bio: "David builds partnerships with organizations to expand our reach and impact."
-    }
+    // { 
+    //   name: "", 
+    //   role: "Adaptive Technology Specialist", 
+    //   // image: sarah, // Uncomment when you have the image
+    //   bio: "Sarah develops custom tools that make artistic creation possible for people with various disabilities."
+    // },
+    // { 
+    //   name: "David Rodriguez", 
+    //   role: "Community Outreach", 
+    //   // image: david, // Uncomment when you have the image
+    //   bio: "David builds partnerships with organizations to expand our reach and impact."
+    // }
   ];
 
   return (
@@ -162,16 +162,17 @@ function About() {
           <p className="partners-intro">
             We shall be collaborating with a diverse network of organizations committed to inclusive arts and accessibility.
           </p>
-          <div className="partners-grid">
+          <h3>COMING SOON ...</h3>
+          {/* <div className="partners-grid"> */}
             {/* Partner logos placeholders */}
-            {[1, 2, 3, 4, 5, 6].map((partner) => (
+            {/* {[1, 2, 3, 4, 5, 6].map((partner) => (
               <div key={partner} className="partner-logo">
                 <div className="image-placeholder">
                   <span>Partner Logo</span>
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
