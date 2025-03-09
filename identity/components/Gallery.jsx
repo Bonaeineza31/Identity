@@ -1,13 +1,14 @@
 // pages/Gallery.jsx
 import React, { useState } from 'react';
 import '../styles/gallery.css';
+import image1 from '../images/Screenshot 2025-03-09 122822.png'
 
 function Gallery() {
   const [filter, setFilter] = useState('all');
   
   // Sample artwork data
   const artworks = [
-    { id: 1, title: "Colorful Dreams", artist: "Maria Santos", medium: "Painting", category: "visual" },
+    { id: 1, title: "Colorful Dreams", artist: "Maria Santos", medium: "Painting", category: "visual", image: image1 },
     { id: 2, title: "Sound of Silence", artist: "John Chen", medium: "Digital Art", category: "digital" },
     { id: 3, title: "Texture of Life", artist: "Aisha Johnson", medium: "Sculpture", category: "sculpture" },
     { id: 4, title: "Ocean Whispers", artist: "David Kim", medium: "Painting", category: "visual" },
@@ -103,7 +104,7 @@ function Gallery() {
               <h3>Maria Santos</h3>
               <p className="artist-medium">Visual Artist | Painter</p>
               <p className="artist-bio">
-                Maria Santos is a visual artist who explores themes of identity and perception 
+                  Kwizera Hubert is a visual artist who explores themes of identity and perception 
                 through vibrant, expressive paintings. Born with cerebral palsy, Maria has 
                 developed unique techniques that allow her to create intricate brushwork and 
                 textures that have become her signature style.
