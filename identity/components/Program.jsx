@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Programs.css';
+import '../styles/programs.css';
 
 function Programs() {
   const workshops = [
