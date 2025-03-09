@@ -1,6 +1,7 @@
 // pages/About.jsx
 import React from 'react';
 import '../styles/about.css';
+import kevin from '../images/kevin pics.jpg'
 
 function About() {
   return (
@@ -70,20 +71,21 @@ function About() {
           <div className="story-content">
             <div className="story-image">
               <div className="image-placeholder">
-                <span>Founder's Photo</span>
+                <img src={kevin}/>
+                {/* <span>kevin</span> */}
               </div>
             </div>
             <div className="story-text">
               <p>
-                ArtAbility began in 2020 when our founder, an artist with a disability, 
-                experienced firsthand the lack of accessible creative spaces and opportunities. 
+                Identity began in 2024 when our founder, an young boy without  disability, 
+                experienced firsthand the lack of accessible creative spaces and opportunities for people with disability. 
                 What started as a small workshop series has grown into a comprehensive organization 
                 dedicated to transforming the arts and entertainment landscape.
               </p>
               <p>
-                Over the years, we've expanded our programs, built partnerships with major cultural 
-                institutions, and helped launch the careers of dozens of talented artists with disabilities. 
-                Our work has been recognized nationally for its innovation and impact.
+                Over the months, we've expanded our programs, visted centers having people with such disability 
+                 and encouraged most of them to start  careers  as talented artists with disabilities. 
+                Our work has been recognized on district-level for its innovation and impact.
               </p>
               <p>
                 Today, we continue to grow our reach while remaining true to our founding vision: 
