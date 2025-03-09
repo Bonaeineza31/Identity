@@ -7,7 +7,7 @@ import Home from '../components/Home';
 import About from '../components/About';
 import Gallery from '../components/Gallery';
 import Contact from '../components/Contact';
-import Programs from '../components/Programs';
+import Program from '../components/Program';
 import './App.css';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/programs" element={<Programs />} />
+            <Route path="/program" element={<Program />} />
             <Route path="/contact" element={<Contact />} /> 
           </Routes>
         </main>
