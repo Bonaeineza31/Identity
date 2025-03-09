@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Home from '../components/Home';
 import About from '../components/About';
 import Gallery from '../components/Gallery';
-import Contact from '.,.components/Contact';
+import Contact from '../components/Contact';
 import Programs from '../components/Programs';
 import './App.css';
 
