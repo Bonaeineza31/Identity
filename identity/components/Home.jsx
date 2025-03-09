@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/home.css';
+import homeimage from '../images/Screenshot 2025-03-09 115023.png'
 
 function Home() {
   return (
@@ -19,9 +20,8 @@ function Home() {
             </div>
           </div>
           <div className="hero-image">
-            {/* Placeholder for hero image */}
-            <div className="image-placeholder">
-              <span>Featured Artist Showcase</span>
+            <div className="image-placeholder" >
+              <span> <img src={homeimage} /></span>
             </div>
           </div>
         </div>
