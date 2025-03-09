@@ -1,15 +1,15 @@
 // pages/Gallery.jsx
 import React, { useState } from 'react';
 import '../styles/gallery.css';
-import image1 from '../images/Screenshot 2025-03-09 122822.png'
+import image7 from '../images/Screenshot 2025-03-09 122822.png'
 import image2 from '../images/Screenshot 2025-03-09 162001.png'
 import image3 from '../images/Screenshot 2025-03-09 162008.png'
 import image8 from '../images/Screenshot 2025-03-09 163712.png'
 import image5 from '../images/Screenshot 2025-03-09 163828.png'
 import image6 from '../images/Screenshot 2025-03-09 163351.png'
 import image4 from '../images/Screenshot 2025-03-09 163409.png'
-import image7 from '../images/Screenshot 2025-03-09 162008.png'
-
+import image1 from '../images/Screenshot 2025-03-09 164453.png'
+import maria from '../images/Screenshot 2025-03-09 123150.png'
 
 
 function Gallery() {
@@ -106,14 +106,14 @@ function Gallery() {
           <div className="spotlight-content">
             <div className="spotlight-image">
               <div className="image-placeholder">
-                <span>Artist Portrait</span>
+                <img src={maria}/>
               </div>
             </div>
             <div className="spotlight-info">
               <h3>Maria Santos</h3>
               <p className="artist-medium">Visual Artist | Painter</p>
               <p className="artist-bio">
-                  Kwizera Hubert is a visual artist who explores themes of identity and perception 
+                 Maria is a visual artist who explores themes of identity and perception 
                 through vibrant, expressive paintings. Born with cerebral palsy, Maria has 
                 developed unique techniques that allow her to create intricate brushwork and 
                 textures that have become her signature style.
