@@ -76,10 +76,14 @@ function Gallery() {
             {filteredArtworks.map((artwork) => (
               <div key={artwork.id} className="artwork-card card">
                 <div className="artwork-image">
-                  <div className="image-placeholder">
-                    <span>Artwork Image</span>
-                  </div>
-                </div>
+    {artwork.image ? (
+      <img src={artwork.image} alt={artwork.title} />
+    ) : (
+      <div className="image-placeholder">
+        <span>Artwork Image</span>
+      </div>
+    )}
+  </div>
                 <div className="artwork-info">
                   <h3>{artwork.title}</h3>
                   <p className="artist-name">By {artwork.artist}</p>
