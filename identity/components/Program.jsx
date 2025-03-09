@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/programs.css';
+import Jessica from '../images/Screenshot 2025-03-09 123052.png'
 
 function Programs() {
   const workshops = [
@@ -66,11 +67,11 @@ function Programs() {
                 inclusive arts education and adaptive techniques.
               </p>
             </div>
-            <div className="overview-image">
+            {/* <div className="overview-image">
               <div className="image-placeholder">
                 <span>Program Highlights Image</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -172,7 +173,7 @@ function Programs() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-4">
+          <div className="text-center mt-6">
             <Link to="/programs/workshops" className="btn btn-outline">View All Workshops</Link>
           </div>
         </div>
@@ -181,7 +182,8 @@ function Programs() {
       <section className="testimonials-section">
         <div className="container">
           <h2 className="section-heading text-center">Program Testimonials</h2>
-          <div className="testimonials-grid">
+          <h3>COMING SOON...</h3>
+          {/* <div className="testimonials-grid">
             <div className="testimonial-card card">
               <div className="testimonial-content">
                 <p>
@@ -193,7 +195,7 @@ function Programs() {
               <div className="testimonial-author">
                 <div className="author-image">
                   <div className="image-placeholder small">
-                    <span>Photo</span>
+                    <img src={Jessica}/>
                   </div>
                 </div>
                 <div className="author-info">
@@ -223,7 +225,7 @@ function Programs() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
