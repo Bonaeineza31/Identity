@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 // import Footer from './components/Footer';
 import Home from '../components/Home';
 import About from '../components/About';
-// import Gallery from './pages/Gallery';
+import Gallery from './pages/Gallery';
 // import Contact from './pages/Contact';
 // import Programs from './pages/Programs';
 import './App.css';
@@ -19,8 +19,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            {/*<Route path="/gallery" element={<Gallery />} />
-            <Route path="/programs" element={<Programs />} />
+            <Route path="/gallery" element={<Gallery />} />
+            {/*<Route path="/programs" element={<Programs />} />
             <Route path="/contact" element={<Contact />} /> */}
           </Routes>
         </main>
