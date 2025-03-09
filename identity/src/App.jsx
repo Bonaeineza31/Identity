@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 // import Footer from './components/Footer';
 import Home from '../components/Home';
-// import About from './pages/About';
+import About from './pages/About';
 // import Gallery from './pages/Gallery';
 // import Contact from './pages/Contact';
 // import Programs from './pages/Programs';
@@ -18,8 +18,8 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<About />} />
-            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/about" element={<About />} />
+            {/*<Route path="/gallery" element={<Gallery />} />
             <Route path="/programs" element={<Programs />} />
             <Route path="/contact" element={<Contact />} /> */}
           </Routes>
