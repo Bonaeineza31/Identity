@@ -1,0 +1,210 @@
+/* pages/Gallery.css */
+.gallery-hero {
+    padding: 100px 0;
+    background-color: #6a5acd;
+    color: white;
+    text-align: center;
+  }
+  
+  .gallery-content {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .gallery-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .filter-btn {
+    padding: 0.7rem 1.5rem;
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-btn:hover {
+    border-color: #6a5acd;
+    color: #6a5acd;
+  }
+  
+  .filter-btn.active {
+    background-color: #6a5acd;
+    border-color: #6a5acd;
+    color: white;
+  }
+  
+  .artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .artwork-card {
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .artwork-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .artwork-image {
+    height: 280px;
+    overflow: hidden;
+  }
+  
+  .artwork-image .image-placeholder {
+    height: 100%;
+    border-radius: 0;
+  }
+  
+  .artwork-info {
+    padding: 1.5rem;
+  }
+  
+  .artwork-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .artist-name {
+    color: #6a5acd;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .artwork-medium {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .featured-artist-spotlight {
+    padding: 100px 0;
+    background-color: white;
+  }
+  
+  .spotlight-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 3rem;
+  }
+  
+  .spotlight-image .image-placeholder {
+    height: 400px;
+  }
+  
+  .spotlight-info h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .artist-medium {
+    color: #6a5acd;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  
+  .artist-bio {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .spotlight-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .exhibition-calendar {
+    padding: 100px 0;
+    background-color: #f3f0ff;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .event-card {
+    padding: 2rem;
+  }
+  
+  .event-date {
+    color: #6a5acd;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .event-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .event-location {
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .event-description {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .submission-cta {
+    padding: 80px 0;
+    background-color: #6a5acd;
+    color: white;
+    text-align: center;
+  }
+  
+  .submission-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .submission-cta p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+  
+  .submission-cta .btn {
+    background-color: white;
+    color: #6a5acd;
+  }
+  
+  .submission-cta .btn:hover {
+    background-color: #f3f0ff;
+  }
+  
+  @media (max-width: 992px) {
+    .spotlight-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-filters {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .filter-btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
